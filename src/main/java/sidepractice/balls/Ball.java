@@ -12,7 +12,8 @@ interface  Bouncable{
 class GameWithBouncyBall{
 
 
-    public static  void play(Bouncable bouncable){
+
+     static  void play(Bouncable bouncable){
 
         if (bouncable.getBounceFactor() > 3) {
 
@@ -67,6 +68,8 @@ class CricketsBall implements Bouncable{
 public class Ball /*implements Bouncable*/{
 
     public static void main(String[] args) {
+
+
         GameWithBouncyBall.play(new BeachBall());
         GameWithBouncyBall.play(new CricketsBall());
     }
