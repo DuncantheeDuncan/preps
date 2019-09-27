@@ -1,4 +1,4 @@
-package aboutStatics;
+package sidepractice.crowedquest.aboutStatics;
 
 
 public class Statik {
@@ -14,12 +14,12 @@ public class Statik {
         count();
         count();
         count();
-        Statik.count();
-        System.out.print(counter);
+        Statik.count() ;
+        System.out.print(counter );
         Statik.count();
         Statik.count();
 
-        System.out.println(Statik.counter);
+        System.out.println(Statik.counter );
 
     }
 }
