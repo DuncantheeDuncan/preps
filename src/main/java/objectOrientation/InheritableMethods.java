@@ -19,6 +19,7 @@ class Human extends Species{
 //    }
 // TODO: if the keyword @override is implemented it will result into a compiler ERROR!!
 //   @Override
+//    !! final thought static methods cannot be overridden
     public static void statikcheck(){System.out.print(" Me too, I am static  HUMAN"); }
 
 }
