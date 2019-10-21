@@ -1,44 +1,47 @@
 package objectOrientation;
 
-//class ovelod{
-//    public void in(){
-//        System.out.println("overloaded..");
-//    }
-//
-//    public void in(int i){
-//        System.out.println("success");
-//    }
-//}
+class MyColor {
+
+    public void color1() {
+
+        System.out.print("Color is Green ");
+    }
+}
 
 class HisColor extends MyColor {
 
-    public void color() {
-//        System.out.println("color is Blue");
-        MyColor m = new MyColor();
-        m.color();
+    public void color2() {
+        System.out.print("color is Blue ");
+
 
     }
 }
 
 class TheirColor extends HisColor {
 
-    public void color() {
-        HisColor N = new HisColor();
-        N.color();
+    public void color3() {
+        System.out.print("color is Black ");
     }
 }
 
 public class PolymorphicMethod {
     public static void main(String[] args) {
 
-        MyColor color = new TheirColor();
+        MyColor myColor = new MyColor();
 
-        color.color();
-//ovelod lod = new ovelod();
-//lod.in(5);
+        HisColor hisColor = new HisColor();
+
+        hisColor.color1();
+        myColor.color1();
+
+        System.out.println(hisColor instanceof TheirColor);
+
+        System.out.print("succes or not ? ");
+        ((TheirColor)hisColor).color3();
+
+
+
 
 
     }
-
-
 }
