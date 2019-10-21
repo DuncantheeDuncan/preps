@@ -1,7 +1,7 @@
 package objectOrientation;
 abstract class Animal{}
 class Dog extends Animal{
-    public void whatisMyName(String s){
+    public void whatIsMyName(String s){
 
         System.out.println(s + " That's your name..(-|-)");
     }
@@ -10,7 +10,7 @@ public class passingIsArelationship extends  Dog{
 
     public Animal go(String s){
 
-        whatisMyName(s);
+        whatIsMyName(s);
         
         return new Dog();
     }
