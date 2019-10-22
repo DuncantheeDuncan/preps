@@ -1,43 +1,52 @@
 package objectOrientation;
 
-class MyColor {
 
-    public void color1() {
-
-        System.out.print("Color is Green ");
+class Book{
+    public void books(){
+        System.out.println("Book name: THE AVENGERS!!");
     }
 }
 
-class HisColor extends MyColor {
-
-    public void color2() {
-        System.out.print("color is Blue ");
-
-
+class Chapters extends  Book{
+    public void chapters(){
+        System.out.println("List of chapters");
+        System.out.println("chapter1\nchapter2\nchapter3\nchapter4\n");
     }
+
 }
 
-class TheirColor extends HisColor {
+class Topics extends Chapters{
+    public void topics(){
+        System.out.println("List of topics");
+        System.out.println("topic1\ntopic2\ntopic3\ntopic4\ntopic5\n");
+    }
 
-    public void color3() {
-        System.out.print("color is Black ");
+}
+
+class Pages extends Topics{
+    public void pages(){
+        System.out.println("this book have\n500 pages");
     }
 }
 
 public class PolymorphicMethod {
     public static void main(String[] args) {
+        Book myBook = new Book();
+        Chapters myChapters = new Chapters();
+        Topics myTopics = new Topics();
+        Pages myPages = new  Pages();
 
-        MyColor myColor = new MyColor();
+//        casting
+        ((Book)myChapters).books();
+//        myPages.books();// no need to cast
 
-        HisColor hisColor = new HisColor();
+//        ((Topics)myChapters).topics();// classCastException
 
-        hisColor.color1();
-        myColor.color1();
+        System.out.println(myChapters instanceof Pages);// false
 
-        System.out.println(hisColor instanceof TheirColor);
+        ((Chapters)myTopics).chapters();
 
-        System.out.print("succes or not ? ");
-        ((TheirColor)hisColor).color3();
+
 
 
 
