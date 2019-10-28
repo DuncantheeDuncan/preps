@@ -20,6 +20,7 @@ public class SubString extends SuperString  {
         return "Sub String 1";
     }
 
+
 @Override
     public Object toString(String str){
 

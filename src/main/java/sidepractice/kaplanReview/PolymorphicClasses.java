@@ -41,6 +41,9 @@ public class PolymorphicClasses extends  Snake{
         cat2.show();
         cat3.show();
 
+//        Cat cat = new PolymorphicClasses();
+//        cat.show();
+
 
     }
 }
