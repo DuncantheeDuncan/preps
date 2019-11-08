@@ -1,5 +1,9 @@
 package sidepractice.kaplanReview;
 
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 class BeforeOneOfTheKind{
     BeforeOneOfTheKind(){
 
@@ -47,6 +51,15 @@ public class ConstructorsImplicitSuper extends SecondOfTheKind {
 
     public static void main(String[] args) {
 
+
+        ArrayList<String> names = new ArrayList<>(2);
+        names.add("Amy");
+        names.add("Anne");
+        names.add("Jason");
+        System.out.println(names.get(3));
+
+
+        System.out.println(names.get(6));
         BeforeOneOfTheKind on = new SecondOfTheKind(3);
         on.four();
 
