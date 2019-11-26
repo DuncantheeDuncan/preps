@@ -1,5 +1,7 @@
 package stringsArraysListsDatesLambas;
 
+import java.util.ArrayList;
+
 public class ConstructingArrays {
 static void oneDimention(){
     System.out.println("* * * * * * * * * * * * * * * * * *");
@@ -43,6 +45,16 @@ int anony [][] = new int[][]{{3,4,5,6,3,6,45,},{5,4},{4,89,25},{4,8,2}};
     Two2D();
 
     oneDimention();
+
+
+        ArrayList <String> list;
+//        if(list !=null)
+//       list.add("phumlani");
+String arrrr[][] ={{"one","two"},null,{"three"}, new String[10]};
+
+        System.out.println(arrrr[3][0].length());
+
+//        System.out.println(arrrr[1]);
 
 
 

@@ -1,15 +1,22 @@
-package kaplanReview;
-class BlankTry{
+package sidepractice.kaplanReview;
 
-	public static void main(String[] args) throws IOException{
+import java.io.IOException;
+
+class BlankTry{
+public static void ii() throws IOException {
+
+	throw  new IOException();
+}
+	public static void main(String[] args) throws IOException {
 		
 	System.out.println("phumlani");
 
 
 	try{
 		System.out.println("insede.. ");
+		 ii();
 	}catch(IOException e ){
-		throw new IOException();
+//		throw new IOException();
 System.out.println("IOException.. ");
 
 	}

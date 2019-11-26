@@ -1,4 +1,4 @@
-package b;
+package sidepractice.enthureware.b;
 
 import a.ClassA;
 
