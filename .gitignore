@@ -13,3 +13,5 @@ lib/out
 *.iws
 .idea
 target/*
+.vscode
+
